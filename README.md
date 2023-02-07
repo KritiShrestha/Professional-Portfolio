@@ -12,7 +12,7 @@ It would help employer's to assess and evaluate whether applying candidate is su
 ## Table of contents
 -Installation
 -Usage
--Deployed Application
+-Application
 -License
 
 ## Installation
@@ -25,7 +25,7 @@ It will help employer's to find suitable employee for the open position after ev
 ![Image is the screenshot of homepage of Professional Portfolio](./develop/assets/images/Professional-Portfolio_screenshot.png)
 
 ## Application
-Here's the link to the deployed application - https://kritishrestha.github.io/Professional-Portfolio
+Here's the link to the deployed application - https://kritishrestha.github.io/Professional-Portfolio.
 Note: Images being used are copyright free and downloaded from web. Source - Getty Images
 
 ## License
