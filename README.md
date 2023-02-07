@@ -16,16 +16,16 @@ It would help employer's to assess and evaluate whether applying candidate is su
 -License
 
 ## Installation
--Clone this repository() to your local machine 
+-Clone this repository(https://github.com/KritiShrestha/Professional-Portfolio) to your local machine 
 -open the project in VS code or any other IDEs
 -Run index.html in the live server. This will open the webpage in the browser
 
 ## Usage
 It will help employer's to find suitable employee for the open position after evaluating their projects on their professional portfolio. Here's the screen shot of the wepage when opened -
-![Image is the screenshot of homepage of Professional Portfolio](./Develop/assets/images/Professional-Portfolio_screenshot.png)
+![Image is the screenshot of homepage of Professional Portfolio](./develop/assets/images/Professional-Portfolio_screenshot.png)
 
 ## Application
-Here's the link to the deployed application
+Here's the link to the deployed application - https://kritishrestha.github.io/Professional-Portfolio
 Note: Images being used are copyright free and downloaded from web. Source - Getty Images
 
 ## License
