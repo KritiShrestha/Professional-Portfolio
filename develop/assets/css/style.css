@@ -1,0 +1,318 @@
+/* Root selector to declare variables*/
+:root {
+    --font-color-white: #ffffff;
+    --description-font-color: #03333b;
+    --gradient-color: linear-gradient(to right, #ad5389, #3c1053);
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Universal selector which sets size, padding and margin for webpage */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* The header and footer is styled with following property and value, including h1, nav, ul and li elements */
+.header,
+.listed-items {
+    background: var(--gradient-color);
+    height: 80px;
+    color: var(--font-color-white);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    height: 45px;
+}
+
+.header nav,
+.listed-items nav {
+    display: flex;
+    margin-top: 15px;
+}
+
+.header nav ul,
+.listed-items nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header nav ul li {
+    margin-left: 40px;
+}
+
+/* The listed items is styled with following property and value, including h1, nav, ul and li elements */
+.listed-items {
+    background: none;
+    font-weight: bolder;
+}
+
+.listed-items nav {
+    margin: 0px;
+}
+
+.listed-items nav ul {
+    padding-top: 30px;
+}
+
+.listed-items nav ul li {
+    margin-left: 100px;
+}
+
+.listed-items nav a {
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* style for navigation a href*/
+nav a {
+    color: var(--font-color-white);
+    text-decoration: none;
+    font-size: 23px;
+    padding: 5px;
+}
+
+/* style for navigation hover*/
+nav a:hover {
+    color: #a5a4a4;
+    background-color: var(--font-color-white);
+    border-style: hidden;
+    border-radius: 3px;
+}
+
+/* background image with provided styles*/
+.background-img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/ocean.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+/* heading for over the background image*/
+.heading2 {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    background: var(--gradient-color);
+    color: var(--font-color-white);
+    padding: 0px 10px 0px 10px;
+}
+
+/* vertical line for aside*/
+.vl {
+    border-left: 4px solid #793a8f;
+    height: 90%;
+    float: right;
+    margin: -60px 0px 0px 0px;
+}
+
+/* Style for aside classes, including h3 and description */
+.about-me,
+.work,
+.contact-me {
+    color: var(--description-font-color);
+    height: 250px;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.about-me h3,
+.work h3,
+.contact-me h3 {
+    font-size: 36px;
+    padding: 45px 0px 0px 0px;
+}
+
+.about-me-description,
+.work-description,
+.contact-me-description {
+    color: var(--description-font-color);
+    padding: 28px;
+    height: 250px;
+    font-family: var(--font-family);
+}
+
+.work,
+.work-description,
+.work .vl {
+    height: 1080px;
+}
+
+.contact-me, .contact-me-description {
+    height: 150px;
+}
+
+.description {
+    font-size: 20px;
+    float: right;
+    width: 85%;
+}
+
+
+.work-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    height: 100%;
+    width: 100%;
+}
+
+/* Frame class for the images*/
+.frame {
+    flex: 50%;
+    padding: 6px 6px 6px 6px;
+    height: 300px;
+    position: relative;
+}
+
+.frame.large {
+    width: auto;
+    height: 450px;
+}
+
+/* Image with the frame with the styles provided*/
+.frame img {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: 8px solid #b97ab4;
+    border-radius: 10px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+/* Change the opacity while hovering the image*/
+.frame:hover img {
+    opacity: 0.5;
+}
+
+/* Text that goes over the image*/
+.image-title {
+    position: absolute;
+    bottom: 35px;
+    background: var(--gradient-color);
+    color: var(--font-color-white);
+    padding: 0px 10px 0px 10px;
+}
+
+/* Footer sytles*/
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/* footer class element*/
+.topics {
+    float: left;
+    width: 15%;
+}
+
+/*Media queries that sets the styles if the viewport is max 1000px wide*/
+@media screen and (max-width: 1000px) {
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
+    .about-me h3, .work h3, .contact-me h3 {
+        font-size: 25px;
+        padding: 20px 0px 0px 0px;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 3px;
+    }
+
+    .heading2 {
+        font-size: 16px;
+    }
+
+    .frame {
+        padding: 14px 4px 4px 4px;
+        height: 200px;
+    }
+
+    .frame.large {
+        height: 350px;
+    }
+
+    .work,
+    .work-description,
+    .work .vl {
+        height: 900px;
+    }
+
+    .listed-items nav ul li {
+        margin-left: 60px;
+    }
+
+    .listed-items nav a {
+        font-size: 15px;
+        padding: 0px;
+    }
+}
+
+/*Media queries that sets the styles if the viewport is min 500px and max 810px wide*/
+@media (min-width: 500px) and (max-width: 810px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .about-me h3, .work h3, .contact-me h3 {
+        font-size: 22px;
+        padding: 15px 0px 0px 0px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .heading2 {
+        font-size: 14px;
+    }
+
+    .frame {
+        padding: 14px 4px 4px 4px;
+        height: 100px;
+    }
+
+    .frame.large {
+        height: 250px;
+    }
+
+    .work,
+    .work-description,
+    .work .vl {
+        height: 700px;
+    }
+
+    .listed-items nav ul li {
+        margin-left: 30px;
+    }
+
+    .listed-items nav a {
+        font-size: 10px;
+    }
+}
